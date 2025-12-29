@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación 15 Años</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado con animación especial -->
+        <header>
+            <div class="header-content">
+                <div class="sparkle" id="sparkle1">✨</div>
+                <div class="sparkle" id="sparkle2">✨</div>
+                <div class="sparkle" id="sparkle3">✨</div>
+                <h1><i class="fas fa-crown"></i> Mis Quince Años</h1>
+                <h2>¡Una noche mágica te espera!</h2>
+                <div class="celebrant">
+                    <div class="name-flower left-flower">🌺</div>
+                    <div class="name-container">
+                        <div class="celebrant-name" id="celebrantName">Valentina</div>
+                        <div class="age-number">15</div>
+                    </div>
+                    <div class="name-flower right-flower">🌺</div>
+                </div>
+                <p class="invitation-text">Con alegría en mi corazón, te invito a celebrar este momento especial de mi vida</p>
+                <div class="date-badge">
+                    <i class="fas fa-star"></i> Sábado, 12 de Julio, 2026
+                </div>
+            </div>
+        </header>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <!-- Sección 1: Detalles del evento -->
+            <section class="card card-details">
+                <div class="card-header">
+                    <h3><i class="fas fa-calendar-star"></i> Detalles de la Celebración</h3>
+                </div>
+                <div class="card-body">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Hora</h4>
+                            <p>7:00 PM - 2:00 AM</p>
+                            <small>Recepcion a las 7:00 PM • Cena a las 8:30 PM</small>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Lugar</h4>
+                            <p>Salón de Fiestas "La Luna"</p>
+                            <small>Av. Principal #456, Ciudad Jardín</small>
+                            <div class="map-link">
+                                <a href="#" id="mapLink"><i class="fas fa-map-pin"></i> Ver en mapa</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-vest"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Código de Vestimenta</h4>
+                            <p>Elegante - Formal</p>
+                            <small>Vestido largo o cocktail para mujeres<br>Traje o guayabera para hombres</small>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Mesa de Regalos</h4>
+                            <p>Tu presencia es el mejor regalo</p>
+                            <small>Si deseas obsequiar algo, preferimos contribuciones para mi futuro educativo</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección 2: Programa de la noche -->
+            <section class="card card-program">
+                <div class="card-header">
+                    <h3><i class="fas fa-music"></i> Programa de la Noche</h3>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">7:00 PM</div>
+                            <div class="timeline-content">
+                                <h5>Recepcion de Invitados</h5>
+                                <p>Bienvenida con coctel y fotos en el photocall</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-time">8:30 PM</div>
+                            <div class="timeline-content">
+                                <h5>Cena</h5>
+                                <p>Banquete especial • Menú internacional</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-time">9:30 PM</div>
+                            <div class="timeline-content">
+                                <h5>Ceremonia de las Velas</h5>
+                                <p>Momento simbólico con mis seres queridos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-time">10:00 PM</div>
+                            <div class="timeline-content">
+                                <h5>¡Hora de Bailar!</h5>
+                                <p>DJ en vivo • Sorprendentes actuaciones</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-time">12:00 AM</div>
+                            <div class="timeline-content">
+                                <h5>Pastel y Brindis</h5>
+                                <p>Corte del pastel y brindis por mis 15 años</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="music-request">
+                        <h4><i class="fas fa-headphones"></i> Pide tu canción</h4>
+                        <div class="music-input">
+                            <input type="text" id="songRequest" placeholder="¿Qué canción no puede faltar?">
+                            <button class="btn-small" id="addSongBtn">Agregar</button>
+                        </div>
+                        <div class="song-list" id="songList">
+                            <p class="empty-list">Aún no hay canciones solicitadas. ¡Sé el primero!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección 3: Confirmación y contacto -->
+            <section class="card card-confirm">
+                <div class="card-header">
+                    <h3><i class="fas fa-envelope"></i> Confirmación</h3>
+                </div>
+                <div class="card-body">
+                    <div class="rsvp-section">
+                        <p class="rsvp-text">Por favor, confirma tu asistencia antes del <strong>30 de Junio, 2025</strong> para poder planificar todos los detalles.</p>
+                        
+                        <div class="rsvp-buttons">
+                            <button class="btn-rsvp btn-yes" id="confirmYes">
+                                <i class="fas fa-check-circle"></i> ¡Sí, asistiré!
+                            </button>
+                            <button class="btn-rsvp btn-no" id="confirmNo">
+                                <i class="fas fa-times-circle"></i> No podré asistir
+                            </button>
+                            <button class="btn-rsvp btn-maybe" id="confirmMaybe">
+                                <i class="fas fa-question-circle"></i> Tal vez
+                            </button>
+                        </div>
+                        
+                        <div class="guest-counter">
+                            <h4>¿Cuántos asistirán?</h4>
+                            <div class="counter-controls">
+                                <button class="counter-btn" id="decreaseGuests">-</button>
+                                <span class="guest-count" id="guestCount">1</span>
+                                <button class="counter-btn" id="increaseGuests">+</button>
+                            </div>
+                            <small class="counter-note">Incluyéndote a ti</small>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h4><i class="fas fa-phone-alt"></i> Para más información</h4>
+                            <p>Familia Rodríguez<br>
+                            <i class="fas fa-envelope"></i> fiesta15valentina@gmail.com<br>
+                            <i class="fas fa-phone"></i> (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Contador regresivo -->
+        <section class="countdown-section">
+            <h3><i class="fas fa-hourglass-half"></i> La cuenta regresiva ha comenzado</h3>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdownDays">00</div>
+                    <div class="countdown-label">Días</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdownHours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdownMinutes">00</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdownSeconds">00</div>
+                    <div class="countdown-label">Segundos</div>
+                </div>
+            </div>
+            <p class="countdown-message" id="countdownMessage">¡Prepárate para una noche inolvidable!</p>
+        </section>
+        
+        <!-- Galería de fotos (placeholder) -->
+        <section class="gallery-section">
+            <h3><i class="fas fa-images"></i> Galería de Preparativos</h3>
+            <div class="gallery-container">
+                <div class="gallery-item" style="background-color: #ffb6c1;">
+                    <i class="fas fa-crown gallery-icon"></i>
+                    <p>Mi corona</p>
+                </div>
+                <div class="gallery-item" style="background-color: #add8e6;">
+                    <i class="fas fa-shoe-prints gallery-icon"></i>
+                    <p>Zapatos de baile</p>
+                </div>
+                <div class="gallery-item" style="background-color: #d8bfd8;">
+                    <i class="fas fa-camera gallery-icon"></i>
+                    <p>Fotografías</p>
+                </div>
+                <div class="gallery-item" style="background-color: #98fb98;">
+                    <i class="fas fa-utensils gallery-icon"></i>
+                    <p>Menú especial</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pie de página -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-heart"></i> 15 Años
+                </div>
+                <p class="footer-message">"Los años pasan, pero los recuerdos permanecen. Gracias por ser parte de este momento especial en mi vida."</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fas fa-hashtag"></i></a>
+                </div>
+                <p class="footer-tag">#MisQuinceValentina #FiestaDe15 #RecuerdosInolvidables</p>
+                <p class="footer-copyright">© 2025 - Invitación digital creada con ❤️ para Valentina</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Modal de confirmación -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> Confirmación Enviada</h3>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-details" id="confirmationDetails">
+                    <!-- Los detalles de confirmación se insertarán aquí -->
+                </div>
+                <div class="modal-message">
+                    <p><i class="fas fa-info-circle"></i> Recibirás un recordatorio por correo electrónico una semana antes del evento.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close" id="modalCloseBtn">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
